@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling when links are clicked */
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #0000ff, #00ccff); /* Blue gradient */
+    padding: 15px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #FFD700; /* Change text color to gold on hover */
+    transform: scale(1.1); /* Slightly enlarge text when hovered */
+}
+
+#navbar.scrolled {
+    background-color: #444 !important; /* Dark background when scrolled */
+}
+
+#navbar.scrolled ul li a {
+    color: #fff !important; /* White text when scrolled */
+}
+
+#navbar.scrolled ul li a:hover {
+    color: #FFD700 !important; /* Gold text on hover when scrolled */
+}
+
+.content {
+    margin-top: 80px;
+    text-align: center;
+    padding: 50px;
+}
+
+section {
+    padding: 100px 20px;
+    margin: 50px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
